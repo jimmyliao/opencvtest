@@ -7,7 +7,7 @@ $ pip install numpy
 $ brew install cmake
 $ mkdir release
 $ cd release
-$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=/Users/jimmyliao/Downloads/_Soft/OpenCV/opencv_contrib/modules ..
 $ make
 $ sudo make install
 $ ls -al /usr/local/lib/python2.7/site-packages

@@ -4,8 +4,8 @@ var cv = require('opencv');
 try {
     var camera = new cv.VideoCapture(0);
     var window = new cv.NamedWindow('Video', 0)
-    //camera.set(cv.CAP_PROP_AUTOFOCUS, 1);
-    console.log(JSON.stringify(camera));
+        //camera.set(cv.CAP_PROP_AUTOFOCUS, 1);
+    console.log(camera.get);
 
     //    setInterval(function() {
     camera.read(function(err, image) {
